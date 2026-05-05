@@ -30,10 +30,16 @@
     gap: rem(8);
     position: relative;
     z-index: 1;
+    transition: background-color 150ms ease-out;
+    cursor: pointer;
 
     @media (min-width: $desktop-breakpoint) {
         padding: rem(28) rem(30);
         gap: rem(25);
+    }
+
+    &:hover {
+        background-color: var(--color-neutral-purple-500);
     }
 }
 
@@ -53,7 +59,6 @@
 }
 
 .label {
-    margin: 0;
     font-size: rem(18);
     line-height: rem(20);
     font-weight: 500;
@@ -63,9 +68,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
-    padding: 0;
-    border: 0;
     background: none;
     cursor: pointer;
     color: inherit;
