@@ -1,0 +1,23 @@
+.root {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 400px));
+    gap: rem(24);
+    margin: 0 auto;
+    justify-content: center;
+
+    @media (min-width: $desktop-breakpoint) {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        max-width: rem(1110);
+        gap: rem(30);
+    }
+}
+
+.viewer {
+    grid-column: 1 / -1;
+
+    @media (min-width: $desktop-breakpoint) {
+        grid-column: span 1;
+        grid-row: span 2;
+    }
+}

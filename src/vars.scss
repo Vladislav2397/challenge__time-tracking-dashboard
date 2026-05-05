@@ -1,0 +1,7 @@
+@use 'sass:math';
+
+$desktop-breakpoint: 1240px;
+
+@function rem($value) {
+    @return math.div($value, 16) * 1rem;
+}

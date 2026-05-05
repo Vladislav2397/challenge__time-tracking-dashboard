@@ -1,0 +1,60 @@
+:root {
+    --color-primary-purple-600: hsl(246, 80%, 60%);
+    --color-primary-orange-300: hsl(15, 100%, 70%);
+    --color-primary-blue-300: hsl(195, 74%, 62%);
+    --color-primary-pink-400: hsl(348, 100%, 68%);
+    --color-primary-green-400: hsl(145, 58%, 55%);
+    --color-primary-purple-700: hsl(264, 64%, 52%);
+    --color-primary-yellow-300: hsl(43, 84%, 65%);
+
+    --color-neutral-navy-950: hsl(226, 43%, 10%);
+    --color-neutral-navy-900: hsl(235, 46%, 20%);
+    --color-neutral-purple-500: hsl(235, 45%, 61%);
+    --color-neutral-navy-200: hsl(236, 100%, 87%);
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('/fonts/Rubik/Rubik-VariableFont_wght.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Rubik';
+    src: url('/fonts/Rubik/Rubik-VariableFont_wght.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Rubik';
+    src: url('/fonts/Rubik/Rubik-VariableFont_wght.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+html {
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    background-color: var(--color-neutral-navy-950);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+    padding: rem(80) rem(24);
+    min-width: 375px;
+}
+
+#root {
+    width: 100%;
+}
+
+button {
+    background: none;
+    border: none;
+    color: inherit;
+    padding: 0;
+}

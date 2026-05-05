@@ -1,0 +1,92 @@
+.root {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: var(--color-primary-orange-300);
+    border-radius: rem(16);
+    padding-top: rem(38);
+    overflow: hidden;
+
+    @media (min-width: $desktop-breakpoint) {
+        padding-top: rem(45);
+    }
+}
+
+.icon {
+    position: absolute;
+    top: rem(-10);
+    right: rem(18);
+    width: rem(78);
+    aspect-ratio: 1 / 1;
+}
+
+.card {
+    background-color: var(--color-neutral-navy-900);
+    border-radius: rem(16);
+    padding: rem(28) rem(24);
+    display: flex;
+    flex-direction: column;
+    gap: rem(8);
+    position: relative;
+    z-index: 1;
+
+    @media (min-width: $desktop-breakpoint) {
+        padding: rem(28) rem(30);
+        gap: rem(25);
+    }
+}
+
+.top,
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom {
+    @media (min-width: $desktop-breakpoint) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: rem(8);
+    }
+}
+
+.label {
+    margin: 0;
+    font-size: rem(18);
+    line-height: rem(20);
+    font-weight: 500;
+}
+
+.ellipsis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: none;
+    cursor: pointer;
+    color: inherit;
+    font: inherit;
+}
+
+.value {
+    font-size: rem(32);
+    line-height: rem(38);
+    font-weight: 300;
+
+    @media (min-width: $desktop-breakpoint) {
+        font-size: rem(56);
+        line-height: rem(66);
+    }
+}
+
+.description {
+    font-size: rem(16);
+    line-height: rem(20);
+    font-weight: 400;
+    letter-spacing: -3%;
+    color: var(--color-neutral-navy-200);
+}

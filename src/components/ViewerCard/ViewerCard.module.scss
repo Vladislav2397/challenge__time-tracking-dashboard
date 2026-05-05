@@ -1,0 +1,108 @@
+.root {
+    background-color: var(--color-neutral-navy-900);
+    border-radius: rem(16);
+    min-height: rem(203);
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    padding: rem(32) rem(28);
+    border-radius: rem(16);
+    background-color: var(--color-primary-purple-600);
+    display: flex;
+    align-items: center;
+    gap: rem(14);
+
+    @media (min-width: $desktop-breakpoint) {
+        padding: rem(34) rem(28);
+        flex-direction: column;
+        align-items: flex-start;
+        gap: rem(40);
+        flex-grow: 1;
+    }
+}
+
+.avatar {
+    width: rem(70);
+    height: rem(70);
+    border-radius: 50%;
+    // box-shadow: 0 0 0 3px #fff;
+    background-color: #fff;
+    overflow: hidden;
+    padding: rem(3);
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    @media (min-width: $desktop-breakpoint) {
+        width: rem(84);
+        height: rem(84);
+    }
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: rem(4);
+    padding: 0 rem(4);
+}
+
+.label {
+    font-size: rem(15);
+    line-height: rem(18);
+    font-weight: 400;
+}
+
+.name {
+    font-size: rem(24);
+    line-height: rem(28);
+    font-weight: 300;
+
+    @media (min-width: $desktop-breakpoint) {
+        font-size: rem(39);
+        line-height: rem(48);
+        letter-spacing: 2%;
+    }
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: rem(38);
+    padding: 0 rem(20);
+    list-style: none;
+    flex-grow: 1;
+
+    @media (min-width: $desktop-breakpoint) {
+        padding: rem(26) rem(32);
+        flex-direction: column;
+        align-items: flex-start;
+        gap: rem(20);
+        flex-grow: 0;
+    }
+}
+
+.link {
+    flex: 1;
+    text-align: center;
+    color: var(--color-neutral-purple-500);
+    cursor: pointer;
+    transition: color 150ms ease-out;
+    font-size: rem(18);
+    line-height: rem(22);
+    font-weight: 400;
+
+    &:hover,
+    &.active {
+        color: #fff;
+    }
+
+    button {
+        cursor: pointer;
+    }
+}
